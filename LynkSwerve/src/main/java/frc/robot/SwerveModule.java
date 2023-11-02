@@ -31,7 +31,7 @@ public class SwerveModule {
     private final VelocityVoltage driveVelocity = new VelocityVoltage(0).withEnableFOC(true);
 
     /* angle motor control requests */
-    private final PositionVoltage anglePosition = new PositionVoltage(0);
+    private final PositionVoltage anglePosition = new PositionVoltage(0).withEnableFOC(true);
 
     public SwerveModule(int moduleNumber, SwerveModuleConstants moduleConstants){
         this.moduleNumber = moduleNumber;
@@ -62,12 +62,12 @@ public class SwerveModule {
     private void setSpeed(SwerveModuleState desiredState, boolean isOpenLoop){
         if(isOpenLoop){
             driveDutyCycle.Output = desiredState.speedMetersPerSecond / Constants.Swerve.maxSpeed;
-            mDriveMotor.setControl(driveDutyCycle);
+            mDriveMotor.setControl(driveDutyCycle.withEnableFOC(true));
         }
         else {
             driveVelocity.Velocity = Conversions.MPSToTalon(desiredState.speedMetersPerSecond, Constants.Swerve.wheelCircumference, Constants.Swerve.driveGearRatio);
             driveVelocity.FeedForward = driveFeedForward.calculate(desiredState.speedMetersPerSecond);
-            mDriveMotor.setControl(driveVelocity);
+            mDriveMotor.setControl(driveVelocity.withEnableFOC(true));
         }
     }
     
@@ -76,7 +76,7 @@ public class SwerveModule {
         Rotation2d angle = (Math.abs(desiredState.speedMetersPerSecond) <= (Constants.Swerve.maxSpeed * 0.01)) ? lastAngle : desiredState.angle; //Prevent rotating module if speed is less then 1%. Prevents Jittering.
         
         anglePosition.Position = Conversions.degreesToTalon(angle.getDegrees(), Constants.Swerve.angleGearRatio);
-        mAngleMotor.setControl(anglePosition);
+        mAngleMotor.setControl(anglePosition.withEnableFOC(true));
         lastAngle = angle;
     }
 
