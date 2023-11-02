@@ -27,11 +27,9 @@ public class RobotContainer {
 
     /* Driver Buttons */
     private final JoystickButton zeroGyro = new JoystickButton(driver, XboxController.Button.kY.value);
-    private final JoystickButton robotCentric = new JoystickButton(driver, XboxController.Button.kLeftBumper.value);
-
     /* Subsystems */
     private final Swerve s_Swerve = new Swerve();
-    private final LoggingSubsystem s_logging = new LoggingSubsystem(s_Swerve);
+    private final @SuppressWarnings("unused") LoggingSubsystem s_logging = new LoggingSubsystem(s_Swerve);
 
 
     /** The container for the robot. Contains subsystems, OI devices, and commands. */
@@ -42,7 +40,7 @@ public class RobotContainer {
                 () -> -driver.getRawAxis(translationAxis), 
                 () -> -driver.getRawAxis(strafeAxis), 
                 () -> -driver.getRawAxis(rotationAxis), 
-                () -> robotCentric.getAsBoolean()
+                () -> false //robot centric is mid
             )
         );
 
