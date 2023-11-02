@@ -24,5 +24,7 @@ public class LoggingSubsystem extends SubsystemBase {
     // This method will be called once per scheduler run
     Logger.recordOutput("SwerveModuleStates", s_Swerve.getModuleStates());
     Logger.recordOutput("Robot Pose", s_Swerve.getPose());
+    Logger.recordOutput("Robot Yaw", s_Swerve.getYaw());
+    // Logger.recordOutput("new", s_Swerve.g);
   }
 }

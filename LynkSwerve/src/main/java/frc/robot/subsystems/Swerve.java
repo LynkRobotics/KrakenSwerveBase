@@ -50,7 +50,7 @@ public class Swerve extends SubsystemBase {
             translation.getY(), 
             rotation); //robot centric is practically mid
         
-        ChassisSpeeds.discretize(desiredChassisSpeeds, 0.02); //0.02 is 20ms
+        desiredChassisSpeeds = ChassisSpeeds.discretize(desiredChassisSpeeds, 0.02); //0.02 is 20ms
 
         SwerveModuleState[] swerveModuleStates = Constants.Swerve.swerveKinematics.toSwerveModuleStates(desiredChassisSpeeds);
         SwerveDriveKinematics.desaturateWheelSpeeds(swerveModuleStates, Constants.Swerve.maxSpeed);
