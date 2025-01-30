@@ -299,10 +299,18 @@ public class COTSTalonFXSwerveConstants {
             public static final class driveRatios{
                 /** SDS MK4i - (8.14 : 1) */
                 public static final double L1 = (8.14 / 1.0);
+                /* SDS MK4i - (7.125 : 1) */
+                public static final double L1_5 = (7.125 / 1.0);
                 /** SDS MK4i - (6.75 : 1) */
                 public static final double L2 = (6.75 / 1.0);
+                /* SDS MK4i - (5.90 : 1) */
+                public static final double L2_5 = (5.90 / 1.0); //math doesn't come out cleanly? ((50/16)*(17/27)*(45/15))
                 /** SDS MK4i - (6.12 : 1) */
                 public static final double L3 = (6.12 / 1.0);
+                /* SDS MK4i - (5.36 : 1) */
+                public static final double L3_5 = (5.36 / 1.0);
+                /* SDS MK4i - (5.14 : 1) */
+                public static final double L4 = (5.14 / 1.0);
             }
         }
     }

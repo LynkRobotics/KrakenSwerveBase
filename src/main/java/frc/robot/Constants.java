@@ -17,12 +17,15 @@ public final class Constants {
 
     public static final class Swerve {
         public static final int pigeonID = 1;
+        public static final String pigeonCanBus = "rio"; //TODO: if on canivore, change this to CANivore name or serial number
 
         public static final COTSTalonFXSwerveConstants chosenModule =  //TODO: This must be tuned to specific robot
         COTSTalonFXSwerveConstants.SDS.MK4i.Falcon500(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L2);
 
         /* Drivetrain Constants */
+        /* Center to Center distance of left and right modules in meters. */
         public static final double trackWidth = Units.inchesToMeters(21.73); //TODO: This must be tuned to specific robot
+        /* Center to Center distance of front and rear module wheels in meters. */
         public static final double wheelBase = Units.inchesToMeters(21.73); //TODO: This must be tuned to specific robot
         public static final double wheelCircumference = chosenModule.wheelCircumference;
 
@@ -46,12 +49,12 @@ public final class Constants {
         public static final SensorDirectionValue cancoderInvert = chosenModule.cancoderInvert;
 
         /* Swerve Current Limiting */
-        public static final int angleCurrentLimit = 25;
+        public static final int angleCurrentLimit = 30;
         public static final int angleCurrentThreshold = 40;
         public static final double angleCurrentThresholdTime = 0.1;
         public static final boolean angleEnableCurrentLimit = true;
 
-        public static final int driveCurrentLimit = 35;
+        public static final int driveCurrentLimit = 40;
         public static final int driveCurrentThreshold = 60;
         public static final double driveCurrentThresholdTime = 0.1;
         public static final boolean driveEnableCurrentLimit = true;
@@ -80,6 +83,22 @@ public final class Constants {
         /* Swerve Profiling Values */
         /** Meters per Second */
         public static final double maxSpeed = 4.5; //TODO: This must be tuned to specific robot
+        /* These are theorectial values to start with, tune after
+         * Kraken FOC-DIS (L1.0): ft/s = 12.9 | m/s = 3.93192
+         * Kraken FOC-ENB (L1.0): ft/s = 12.4 | m/s = 3.77952
+         * Kraken FOC-DIS (L1.5): ft/s = 14.2 | m/s = 4.32816
+         * Kraken FOC-ENB (L1.5): ft/s = 14.2 | m/s = 4.32816
+         * Kraken FOC-DIS (L2.0): ft/s = 15.5 | m/s = 4.7244
+         * Kraken FOC-ENB (L2.0): ft/s = 15.0 | m/s = 4.572
+         * Kraken FOC-DIS (L2.5): ft/s = 17.7 | m/s = 5.39496
+         * Kraken FOC-ENB (L2.5): ft/s = 17.1 | m/s = 5.21208
+         * Kraken FOC-DIS (L3.0): ft/s = 17.1 | m/s = 5.21208
+         * Kraken FOC-ENB (L3.0): ft/s = 16.5 | m/s = 5.0292
+         * Kraken FOC-DIS (L3.5): ft/s = 19.5 | m/s = 5.9436
+         * Kraken FOC-ENB (L3.5): ft/s = 18.9 | m/s = 5.76072
+         * Kraken FOC-DIS (L4.0): ft/s = 20.4 | m/s = 6.21792
+         * Kraken FOC-ENB (L4.0): ft/s = 19.7 | m/s = 6.00456
+         */
         /** Radians per Second */
         public static final double maxAngularVelocity = 10.0; //TODO: This must be tuned to specific robot
 
