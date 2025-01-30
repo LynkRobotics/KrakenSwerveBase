@@ -19,6 +19,8 @@ public final class Constants {
         public static final int pigeonID = 1;
         public static final String pigeonCanBus = "rio"; //TODO: if on canivore, change this to CANivore name or serial number
 
+        public static final boolean focEnabled = false; //TODO: This must be tuned to specific robot
+
         public static final COTSTalonFXSwerveConstants chosenModule =  //TODO: This must be tuned to specific robot
         COTSTalonFXSwerveConstants.SDS.MK4i.Falcon500(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L2);
 
