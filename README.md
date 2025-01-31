@@ -10,8 +10,7 @@ This is a swerve base made for ALL CTRE hardware
 - 250hz odom
 
 ## CANcoder Calibration
-words 
-bevels right
+When calibrating for CANcoder offsets, make sure the bevels face right
 
 ## Additional Setup
 **PLEASE** read every `//TODO:` and do the thing, 99% of the time if you are having an issue, you haven't done all of the setup.

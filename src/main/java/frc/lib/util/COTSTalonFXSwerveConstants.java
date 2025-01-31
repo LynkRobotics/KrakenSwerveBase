@@ -42,7 +42,7 @@ public class COTSTalonFXSwerveConstants {
                 /** (396 / 35) : 1 */
                 double angleGearRatio = ((396.0 / 35.0) / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -59,7 +59,7 @@ public class COTSTalonFXSwerveConstants {
                 /** (396 / 35) : 1 */
                 double angleGearRatio = ((396.0 / 35.0) / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -108,7 +108,7 @@ public class COTSTalonFXSwerveConstants {
                 /** (468 / 35) : 1 */
                 double angleGearRatio = ((468.0 / 35.0) / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -125,7 +125,7 @@ public class COTSTalonFXSwerveConstants {
                 /** (468 / 35) : 1 */
                 double angleGearRatio = ((468.0 / 35.0) / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -177,7 +177,7 @@ public class COTSTalonFXSwerveConstants {
                 /** 12.8 : 1 */
                 double angleGearRatio = (12.8 / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -194,7 +194,7 @@ public class COTSTalonFXSwerveConstants {
                 /** 12.8 : 1 */
                 double angleGearRatio = (12.8 / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -221,7 +221,7 @@ public class COTSTalonFXSwerveConstants {
                 /** 12.8 : 1 */
                 double angleGearRatio = (12.8 / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -238,7 +238,7 @@ public class COTSTalonFXSwerveConstants {
                 /** 12.8 : 1 */
                 double angleGearRatio = (12.8 / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -269,7 +269,7 @@ public class COTSTalonFXSwerveConstants {
                 /** (150 / 7) : 1 */
                 double angleGearRatio = ((150.0 / 7.0) / 1.0);
         
-                double angleKP = 100.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
@@ -286,7 +286,7 @@ public class COTSTalonFXSwerveConstants {
                 /** (150 / 7) : 1 */
                 double angleGearRatio = ((150.0 / 7.0) / 1.0);
         
-                double angleKP = 1.0;
+                double angleKP = 100.0; //TODO: This must be tuned to specific robot
                 double angleKI = 0.0;
                 double angleKD = 0.0;
         
