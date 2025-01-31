@@ -8,36 +8,26 @@ This is a swerve base made for ALL CTRE hardware
 
 ## Future Features
 - 250hz odom
+- SDS: MK4c, MK4n Support
+- WCP: X2, X2i, X2t, X2st, Xs
 
 ## CANcoder Calibration
-When calibrating for CANcoder offsets, make sure the bevels face right
+When calibrating for CANcoder offsets, make sure the bevels face right of the robot
 
 ## Additional Setup
 **PLEASE** read every `//TODO:` and do the thing, 99% of the time if you are having an issue, you haven't done all of the setup.
 
 ## Module Support:
-- SDS MK4i
-    - L1
-    - L1.5
-    - L2
-    - L2.5
-    - L3
-    - L3.5
-    - L4
+- SDS MK3
 - SDS MK4
-    - L1
-    - L1.5
-    - L2
-    - L2.5
-    - L3
-    - L3.5
-    - L4
+- SDS MK4i
 - WCP Swerve X
 
 ## Disclaimer
-words
+We still highly reccomend that you use CTRE's swerve generator, as it has more support, and has some additional features that this swerve base does not have.
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
+If you are having trouble, DM me on CD or Discord
