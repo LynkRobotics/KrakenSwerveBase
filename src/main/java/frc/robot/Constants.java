@@ -21,6 +21,8 @@ public final class Constants {
 
         public static final boolean focEnabled = false; //TODO: This must be tuned to specific robot
 
+        public static final boolean isOnCANivore = false; //TODO: This must be tuned to specific robot
+
         public static final COTSTalonFXSwerveConstants chosenModule =  //TODO: This must be tuned to specific robot
         COTSTalonFXSwerveConstants.SDS.MK4i.Falcon500(COTSTalonFXSwerveConstants.SDS.MK4i.driveRatios.L2);
 

@@ -37,8 +37,10 @@ public class Swerve extends SubsystemBase {
         gyro.setYaw(0);
 
 
+
+        boolean isFastOdo = Constants.Swerve.isOnCANivore;
         odoNotifier = new Notifier(this::updateSwerveOdom);
-        odoNotifier.startPeriodic(1.0/250.0);
+        odoNotifier.startPeriodic(isFastOdo ? 1.0 / 250.0 : 1.0 / 50.0); 
 
 
 
