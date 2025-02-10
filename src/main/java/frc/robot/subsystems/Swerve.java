@@ -32,7 +32,7 @@ public class Swerve extends SubsystemBase {
     private final Notifier odoNotifier;
 
     public Swerve() {
-        gyro = new Pigeon2(Constants.Swerve.pigeonID, Constants.Swerve.pigeonCanBus);
+        gyro = new Pigeon2(Constants.Swerve.pigeonID, Constants.Swerve.CanBus);
         gyro.getConfigurator().apply(new Pigeon2Configuration());
         gyro.setYaw(0);
 
